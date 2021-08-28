@@ -56,11 +56,11 @@
           </li>
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-              href="#">About</a>
+              href="#about-us">About</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-              href="#">Contact</a>
+              href="#contact-us">Contact</a>
           </li>
         </ul>
         <button id="navAction"
@@ -116,7 +116,7 @@
       </g>
     </svg>
   </div>
-  <section class="bg-white border-b py-8">
+  <section class="bg-white border-b py-8" id="why-choose-us">
     <div class="container max-w-5xl mx-auto m-8">
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
         WHY CHOOSE US?
@@ -372,7 +372,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-white border-b py-8">
+  <section class="bg-white border-b py-8" id="about-us">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
        ABOUT US
@@ -457,7 +457,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-gray-100 py-8">
+  <section class="bg-gray-100 py-8" id="pricing">
     <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
         Pricing
@@ -567,7 +567,7 @@
       </g>
     </g>
   </svg>
-  <section class="container mx-auto text-center py-6 mb-12">
+  <section class="container mx-auto text-center py-6 mb-12" id="contact-us">
     <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
       Contact Us
     </h1>
@@ -738,6 +738,11 @@
       }
       return false;
     }
+  </script>
+  <!--Smooth scroll-->
+  <script src="/Landing/smooth-scroll.js"></script>
+  <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 </body>
 
